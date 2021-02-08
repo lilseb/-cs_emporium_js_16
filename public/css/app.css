@@ -15813,3 +15813,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+body {
+  margin: 0;
+  font-family: "poppins";
+}
