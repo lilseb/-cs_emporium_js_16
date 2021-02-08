@@ -1,0 +1,23 @@
+{
+  "name": "projet_emporium_seb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilseb/-cs_emporium_js_16.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilseb/-cs_emporium_js_16/issues"
+  },
+  "homepage": "https://github.com/lilseb/-cs_emporium_js_16#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
