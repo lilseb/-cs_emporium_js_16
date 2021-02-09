@@ -1,0 +1,24 @@
+// SECTION POUR ZOOM
+.carte-colonne-image{
+    overflow:hidden;
+    padding: 0;
+    position: relative;
+    .image-colonne{
+        transition: all 2s;
+        width: 100%;
+        display: flex;
+    }
+}
+
+.carte-colonne-image:hover .image-colonne{
+    
+    transform: scale(1.3)
+}
+
+.sales{
+    background-color: red;
+    height: 65px;
+    width : 65px;
+    border-radius: 50%;
+    padding-top : 2.5vh;
+}

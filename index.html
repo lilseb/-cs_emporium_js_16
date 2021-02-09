@@ -10,27 +10,322 @@
 </head>
 <body>
     <header>
-        <img src="./public/img/logo.png" class="mt-5 d-block mx-auto "></img>
-
-        <nav class="row justify-content-around  pt-5  mr-5">
-            <div class="row offset-3 col-lg-6 container">
-                <a href="" class="nav-items nav-link col-lg-2 text-secondary">Home</a>
-                <a href="" class="nav-items nav-link col-lg-2 text-secondary">Product</a>
-                <a href="" class="nav-items nav-link col-lg-2 text-secondary">Blog</a>
-                <a href="" class="nav-items nav-link col-lg-2 text-secondary">Elements</a>
-                <a href="" class="nav-items nav-link col-lg-2 text-secondary">About</a>
-                <a href="" class="nav-items nav-link col-lg-2 text-secondary">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-light d-block text-center mt-5">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div>
+                <img src="./public/img/logo.png" alt="">
             </div>
-            <div class=" col-lg-1 boutton">
-                <button class="bg-white mr-1 border-dark rounded p-2"></button>
-                <button class="bg-dark border-white rounded p-2"></button>
+    
+            <div class="collapse navbar-collapse justify-content-lg-center mt-5" id="navbarSupportedContent">
+                <ul class="d-lg-flex list-unstyled">
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="">Product</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="">Blog</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="">Elements</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="">About</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="">Contact</a>
+                    </li>
+                </ul>
             </div>
-                <button class="col-lg-1 text-white bg-dark rounded">Connexion</button>
-            </nav>
+    
+            <div>
+                <button type="button" class="btn bg-white border-couleur-footer"></button>
+                <button type="button" class="btn btn-dark text-white"></button>
+                <button type="button" class="btn btn-couleur-footer">Connexion</button>
+            </div>
+        </nav>
+    
+    </header>
+    
+    <!-- src/scss/modules/_section.scss -->
+    
+    <!-- SECTION T-SHIRT -->
+    <section class="container-fluid bg-couleur-section-premiere">
+        <div class="row align-items-center text-right">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <p class="text-couleur-site-rouge">Shop at</p>
+                <img class="" src="./public/img/logo.png" alt="">
+                <p>A wonderfull serenity ...</p>
+                <a class="btn btn-couleur-site-rouge">SALE ITEMS</a>
+            </div>
+        
+            <div class="col-lg-6 col-md-12 col-sm-12 div-image-logo">
+                <img class="image-logo" src="./public/img/tshirt.jpg" alt="">
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- 3 items -->
+    <section class="container-fluid">
+    
+        <div class="">
+            <ul class="row list-unstyled">
+                <li class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img" src="./public/img/div-trois-photo/service-1.jpg" alt="Card image">
+                        <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                            <a href="" class="btn text-white">
+                                <p class="card-text">Living Room</p>
+                                <hr class="bg-white">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img" src="./public/img/div-trois-photo/service-2.jpg" alt="Card image">
+                        <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                            <a href="" class="btn text-white">
+                                <p class="card-text">Sale Items</p>
+                                <hr class="bg-white">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class=" card-img" src="./public/img/div-trois-photo/slider-3.jpg" alt="Card image">
+                        <div class="card-img-overlay align-items-center d-flex justify-content-center">
+                            <a href="" class="btn text-white">
+                                <p class="card-text">Clothes</p>
+                                <hr class="bg-white">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Recent Work -->
+    <section class="container text-center">
+        <h4>Recents Products</h4>
+        <div class="row">
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="image-colonne card-img" src="./public/img/div-row-photo/product-luxry-sofa.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Luxury Sofa</p>
+                        <p class="text-couleur-site-rouge">$600.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card  text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-gloves.jpg" alt="">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-6 pl-5 pt-2">
+                            <p class="text-white sales">SALE!</p>
+                        </div>
+                        <div class="col-6">
+                            <p>Leather Gloves</p>
+                            <p class="text-couleur-site-rouge"><del class="text-secondary">$34.00</del>$27.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-cups.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Colorful Bowl</p>
+                        <p class="text-couleur-site-rouge">$18.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-bag.jpg" alt="">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-6 pl-5 pt-2">
+                            <p class="text-white sales">SALE!</p>
+                        </div>
+                        <div class="col-6">
+                            <p>Woman Bag</p>
+                            <p class="text-couleur-site-rouge"><del class="text-secondary">$420</del>$350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-tshitr.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Minimal T-Shirt</p>
+                        <p class="text-couleur-site-rouge">$15.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-plates.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Plates Set</p>
+                        <p class="text-couleur-site-rouge">$30.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-modern-sofa.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Modern Sofa</p>
+                        <p class="text-couleur-site-rouge">$900.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-bed.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Product Bed</p>
+                        <p class="text-couleur-site-rouge">$79.00</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
+                <div class="card text-center">
+                    <div class="carte-colonne-image">
+                        <img class="card-img image-colonne" src="./public/img/div-row-photo/product-shoes.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Minimal Shoes</p>
+                        <p class="text-couleur-site-rouge">$60.00</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- Discover Thousands Of Great Products -->
+    <section class="container-fluid back-img-section d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <h2 class="text-white">Discover Thousands Of Great Products</h2>
+            <button type="button" class="btn btn-couleur-site-rouge">Learn More</button>
+        </div>
+    
+    </section>
+    
+    <!-- Hot Fashion Products -->
+    <section>
+    
+    </section>
+    
+    <!-- LEARN MORE -->
+    <section class="container-fluid mt-5">
+        <div class="row text-center justify-content-around">
+            <div class="col-lg-3 bg-couleur-section-premiere pt-5 pb-5">
+                <i class="far fa-check-circle"></i>        
+                <p>TRUSTED BY +10K CUSTOMERS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid.</p>
+                <button type="button" class="btn bg-dark text-white">LEARN MORE</button>
+            </div>
+            <div class="col-lg-3 bg-danger text-white pt-5 pb-5">
+                <i class="fas fa-paper-plane"></i>
+                <p>VERY FAST SHIPPING</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid.</p>
+                <button type="button" class="btn bg-white">LEARN MORE</button>
+            </div>
+            <div class="col-lg-3 bg-couleur-section-premiere pt-5 pb-5">
+                <i class="far fa-check-circle"></i>        
+                <p>TRUSTED BY +10K CUSTOMERS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid.</p>
+                <button type="button" class="btn bg-dark text-white">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+    
+    <!--src/scss/modules/_footer.scss-->
+    <footer class="container-fluid bg-couleur-footer mt-5">
+        <div class="row container  mx-auto text-white">
+            <div class="col-lg-4">
+                <h6>About Us</h6>
+                <p>A wonderfull serenity has Taken ...</p>
+            </div>
+            <div class="col-lg-4">
+                <h6>Recents Posts</h6>
+                <ul class="list-unstyled">
+                    <li>Hello World</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h6>Tag Cloud</h6>
+                <div class="d-flex">
+                    <button type="button" class="btn">Business</button>
+                    <button type="button" class="btn">Confidence</button>
+                    <button type="button" class="btn">Gadgets</button>
+                </div>
+                <div class="d-flex">
+                    <button type="button" class="btn">Identity</button>
+                    <button type="button" class="btn">Logo</button>
+                    <button type="button" class="btn">Photography</button>
+                </div>
+                <div class="d-flex">
+                    <button type="button" class="btn">Time</button>
+                    <button type="button" class="btn">Trips</button>
+                    <button type="button" class="btn">Works</button>
+                </div>
+                <div class="">
+                    <button type="button" class="btn">Work Space</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-dark">
+        <p class="text-center text-white">&copy;COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
+    </div>
     
 
 
-    </header>
+
+
+
     <script type="module" src="./public/js/main.js"></script>
     <!-- script jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
