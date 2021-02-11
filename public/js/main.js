@@ -1,4 +1,3 @@
-// LET : NAVBAR // 
 let maNavbar = document.querySelector(`nav`)
 let header = document.querySelector(`header`)
 
@@ -16,12 +15,13 @@ let monBody = document.querySelector(`body`)
 let boutonBlanc = document.querySelector(`.bouton-blanc`)
 let boutonNoir = document.querySelector(`.bouton-dark`)
 let couleurTextNavbar = document.querySelectorAll(`.class-changement-couleur`)
-let couleurImageNavbar = document.querySelector(`.image-navbar`)
+let textColor = document.querySelectorAll(`.text-color`)
 
 // -------------------------------------------------------------------------------------------------------------------------------------- //
 
 // +++ NAVBAR SCROLL +++ //
 window.addEventListener(`scroll` , () => {
+    header.style = "height:150px"
     maNavbar.classList.add(`d-flex`,`justify-content-center`,`align-items-center`)
 
     if (window.scrollY == 0) {
@@ -37,6 +37,9 @@ let changementCouleurBlanc = () => {
     monBody.classList.remove(`bg-dark`)
     maNavbar.classList.remove(`bg-dark`)
     maNavbar.classList.add(`bg-white`)
+    textColor.forEach(element =>{
+        element.classList.remove(`text-white`)
+    })
     couleurTextNavbar.forEach(element => {
         element.classList.remove(`text-white`)
     })
@@ -48,7 +51,9 @@ let changementCouleurNoir = () => {
     monBody.classList.add(`bg-dark`)
     maNavbar.classList.remove(`bg-white`)
     maNavbar.classList.add(`bg-dark`)
-    couleurImageNavbar.classList.add(`bg-white`)
+    textColor.forEach(element =>{
+        element.classList.add(`text-white`)
+    })
     couleurTextNavbar.forEach(element => {
         element.classList.add(`text-white`)
     });
@@ -85,7 +90,7 @@ contenuModal.forEach(element => {
         document.querySelector(`#` + div).classList.remove("d-none")
     }
 })
-// Fermeture
+// Fermeture avec croix
 let fermetureModal = () => {
     sectionModal.style.visibility=`hidden`;
     sectionModal.style.opacity=`0`
@@ -108,8 +113,21 @@ let openModal = () => {
         fermetureModal();
     })
     document.body.style.overflow='hidden'
+
+    divHide.addEventListener("click", (e) => {
+        if(modalOpen){
+            if(e.target == e.currentTarget){
+                fermetureModal();   
+            }          
+        }
+    
+    });
 }
 seConnecter.addEventListener(`click`, openModal )
+
+
+
+
 
 // --------------------------------------------------------------------------------------------------------------------------------------- //
 

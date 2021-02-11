@@ -7,10 +7,10 @@
             transition: all 2s;
             width: 100%;
             display: flex;
-            z-index: 0;
         }
         .cache{
-            z-index: -1;
+            bottom : -14%;
+            transition: 2s;
         }
     }
 }
@@ -19,8 +19,9 @@
     transform: scale(1.3)
 }
 .carte-colonne-image:hover .cache{
-    z-index: 0;
+    transform: translateY(-110%);
 }
+
 .sales{
     background-color: red;
     height: 65px;
@@ -44,9 +45,16 @@
     width:100%;
     height:100%;
     background-color:  rgba(0,0,0,.5);
-    z-index:1050; 
+    z-index:3; 
     position: fixed;
 }
 .div-carousel{
     width: 49vh;
 }
+.bouton-blanc{
+    border:1px black solid;
+}
+.bouton-dark{
+    border: 1px white solid;
+}
+
