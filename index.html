@@ -10,73 +10,156 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light d-block text-center mt-5">
+        <nav class="ma-navbar navbar navbar-expand-lg navbar-light d-block text-center bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
             <div>
-                <img src="./public/img/logo.png" alt="">
+                <img class="image-navbar" src="./public/img/logo.png" alt="">
             </div>
     
             <div class="collapse navbar-collapse justify-content-lg-center mt-5" id="navbarSupportedContent">
-                <ul class="d-lg-flex list-unstyled">
+                <ul class="d-lg-flex list-unstyled ">
                     <li class="nav-item">
-                        <a class="nav-link btn" href="">Home</a>
+                        <a class="nav-link btn class-changement-couleur" href="">Home</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link btn" href="">Product</a>
+                        <a class="nav-link btn class-changement-couleur" href="">Product</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link btn" href="">Blog</a>
+                        <a class="nav-link btn class-changement-couleur" href="">Blog</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link btn" href="">Elements</a>
+                        <a class="nav-link btn class-changement-couleur" href="">Elements</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link btn" href="">About</a>
+                        <a class="nav-link btn class-changement-couleur" href="">About</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link btn" href="">Contact</a>
+                        <a class="nav-link btn class-changement-couleur" href="">Contact</a>
                     </li>
                 </ul>
             </div>
     
             <div>
-                <button type="button" class="btn bg-white border-couleur-footer"></button>
-                <button type="button" class="btn btn-dark text-white"></button>
-                <button type="button" class="btn btn-couleur-footer">Connexion</button>
+                <button type="button" class="bouton-blanc btn bg-white border-couleur-footer"></button>
+                <button type="button" class="bouton-dark btn btn-dark text-white"></button>
+                <button type="button" class="bouton-modal-complet btn btn-couleur-footer">Se Connecter</button>
             </div>
         </nav>
     
     </header>
     
+    <section class="modal-complet container d-none">
+    
+        <!-- div Titre + croix -->
+        <div class="d-flex justify-content-between">
+            <img class="" src="./public/img/logo.png" alt="">
+            <button class="bouton-fermeture btn">&times;</button>
+        </div>
+    
+        <!-- Div des boutons connexion et inscription -->
+        <div class="text-center">
+            <button class="btn bg-danger text-white bouton-modal" href="#bouton-un">Connexion</button>
+            <button class="btn bg-danger text-white bouton-modal" href="#bouton-deux">Inscription</button>
+        </div> 
+    
+        <!-- Div connexion -->
+        <div class="contenu-modal active" id="bouton-un">
+            <div class="form-group">
+                <label for="">Rentrez votre adresse e-mail</label>
+                <input class="form-control" type="email" placeholder="email.email@email.com" name="" id="">
+                <small>Nous ne partageons pas votre adresse e-mail</small>
+            </div>
+            <div class="form-group">
+                <label for="">Rentrez votre mot de passe</label>
+                <input class="form-control" type="password" placeholder="VOTRE MDP" name="" id="">
+                <small>Nous partagez pas votre mot de passe !</small>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="" id="">
+                <label for="">Stay connected</label>
+            </div>
+            <div class="form-group">
+                <button class="btn" type="submit">Connexion</button>
+            </div>
+        </div>
+    
+        <!-- Div Inscription -->
+        <div class="contenu-modal" id="bouton-deux">
+            <div class="form-group">
+                <label for="">Rentrez votre adresse e-mail</label>
+                <input class="form-control" type="email" placeholder="email.email@email.com" name="" id="">
+                <small>Nous ne partageons pas votre adresse e-mail</small>
+            </div>
+            <div class="form-group">
+                <label for="">Rentre votre Pseudonyme</label>
+                <input class="form-control" type="text" name="" id="">
+                <small>Créer un pseudo original ^^</small>
+            </div>
+            <div class="form-group">
+                <label for="">Rentrez votre nouveau mot de passe</label>
+                <input class="form-control" type="password" placeholder="VOTRE MDP" name="" id="">
+                <small>Nous partagez pas votre mot de passe !</small>
+            </div>
+            <div class="form-group">
+                <label for="">Re-confirmer votre mot de passe</label>
+                <input class="form-control" type="password" placeholder="VOTRE MDP" name="" id="">
+                <small>Nous partagez pas votre mot de passe !</small>
+            </div>
+            <div class="d-flex ">
+                <div class="form-group">
+                    <input type="checkbox" name="homme" id="">
+                    <label for="">Homme</label>
+                </div>
+                <div class="form-group pl-3">
+                    <input type="checkbox" name="femme" id="">
+                    <label for="">Femme</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn" type="submit">Incription</button>
+            </div>
+    
+        </div>
+    
+        <!-- Div des icones -->
+        <div class="text-center">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat-ghost"></i>
+            <i class="fas fa-laptop-code"></i>
+        </div>
+    
+    </section>
+    
     <!-- src/scss/modules/_section.scss -->
     
     <!-- SECTION T-SHIRT -->
-    <section class="container-fluid bg-couleur-section-premiere">
-        <div class="row align-items-center text-right">
-            <div class="col-lg-6 col-md-12 col-sm-12">
+    
+    <section class="container-fluid bg-couleur-section-premiere mt-5">
+        <div class="d-lg-flex justify-content-lg-center d-md-flex flex-md-row justify-content-md-center flex-sm-column align-items-center">
+            <div class="">
                 <p class="text-couleur-site-rouge">Shop at</p>
                 <img class="" src="./public/img/logo.png" alt="">
                 <p>A wonderfull serenity ...</p>
                 <a class="btn btn-couleur-site-rouge">SALE ITEMS</a>
             </div>
         
-            <div class="col-lg-6 col-md-12 col-sm-12 div-image-logo">
+            <div class="div-image-logo">
                 <img class="image-logo" src="./public/img/tshirt.jpg" alt="">
             </div>
-        
         </div>
     </section>
     
     <!-- 3 items -->
-    <section class="container-fluid">
+    <section class="container-fluid mt-5">
     
         <div class="">
             <ul class="row list-unstyled">
@@ -118,19 +201,35 @@
     </section>
     
     <!-- Recent Work -->
-    <section class="container text-center">
+    <section class="recent container text-center mt-5">
         <h4>Recents Products</h4>
         <div class="row">
     
             <div class="col-lg-4 col-md-6 col-sm-12 pt-3 pb-3">
                 <div class="card text-center">
                     <div class="carte-colonne-image">
+    
                         <img class="image-colonne card-img" src="./public/img/div-row-photo/product-luxry-sofa.jpg" alt="">
+    
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+        
                     </div>
                     <div>
                         <p>Luxury Sofa</p>
                         <p class="text-couleur-site-rouge">$600.00</p>
                     </div>
+    
                 </div>
             </div>
     
@@ -138,6 +237,19 @@
                 <div class="card  text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-gloves.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div class="row align-items-center">
                         <div class="col-6 pl-5 pt-2">
@@ -155,6 +267,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-cups.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div>
                         <p>Colorful Bowl</p>
@@ -167,6 +292,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-bag.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div class="row align-items-center">
                         <div class="col-6 pl-5 pt-2">
@@ -184,6 +322,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-tshitr.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div>
                         <p>Minimal T-Shirt</p>
@@ -196,6 +347,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-plates.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div>
                         <p>Plates Set</p>
@@ -208,6 +372,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-modern-sofa.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div>
                         <p>Modern Sofa</p>
@@ -220,6 +397,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-bed.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div>
                         <p>Product Bed</p>
@@ -232,6 +422,19 @@
                 <div class="card text-center">
                     <div class="carte-colonne-image">
                         <img class="card-img image-colonne" src="./public/img/div-row-photo/product-shoes.jpg" alt="">
+                        <div class="position-absolute cache row container-fluid p-0 m-0" style="bottom: 0;">
+                            <div class="col-6 bg-dark">
+                                <a href="#">
+                                    <i class="far fa-eye "> <br>View details</i>
+                                </a>
+                            </div>
+                            <div class="col-6 bg-danger">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"><br>Select options</i>
+                                </a>
+                            </div>
+                        </div>
+    
                     </div>
                     <div>
                         <p>Minimal Shoes</p>
@@ -243,8 +446,10 @@
         </div>
     </section>
     
+    
+    
     <!-- Discover Thousands Of Great Products -->
-    <section class="container-fluid back-img-section d-flex align-items-center justify-content-center">
+    <section class="container-fluid back-img-section d-flex align-items-center justify-content-center mt-5">
         <div class="text-center">
             <h2 class="text-white">Discover Thousands Of Great Products</h2>
             <button type="button" class="btn btn-couleur-site-rouge">Learn More</button>
@@ -253,7 +458,86 @@
     </section>
     
     <!-- Hot Fashion Products -->
-    <section>
+    <section class="container mt-5">
+    
+        <div class="d-flex" style="overflow: hidden;">
+    
+            <div class="affichage-carousel d-flex" style="transition: 0.5s;">
+    
+                <div class="div-carousel card text-center mt-2">
+                    <div class="div-image-carousel">
+                        <img class="card-img" src="./public/img/div-photo-carousel/product-bag-2-700x500.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Sac</p>
+                        <p class="text-couleur-site-rouge">$650.00</p>
+                    </div>
+                </div>
+    
+                <div class="div-carousel card text-center mt-2">
+                    <div class="div-image-carousel">
+                        <img class="card-img" src="./public/img/div-photo-carousel/product-bag-700x500.jpg" alt="">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-6 pl-5 pt-2">
+                            <p class="text-white sales">SALE!</p>
+                        </div>
+                        <div class="col-6">
+                            <p>Woman Bag</p>
+                            <p class="text-couleur-site-rouge"><del class="text-secondary">$420</del>$250</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="div-carousel card text-center mt-2">
+                    <div class="div-image-carousel">
+                        <img class="card-img" src="./public/img/div-photo-carousel/product-jacket-700x500.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Gros Pull</p>
+                        <p class="text-couleur-site-rouge">$600.00</p>
+                    </div>
+                </div>
+    
+                <div class="div-carousel card text-center mt-2">
+                    <div class="div-image-carousel">
+                        <img class="card-img" src="./public/img/div-photo-carousel/product-shoes-700x500.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Minimal Shoes</p>
+                        <p class="text-couleur-site-rouge">$60.00</p>
+                    </div>
+                </div>
+    
+                <div class="div-carousel card text-center mt-2">
+                    <div class="div-image-carousel">
+                        <img class="card-img" src="./public/img/div-photo-carousel/product-tshitr-700x500.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>T-shirt</p>
+                        <p class="text-couleur-site-rouge">$600.00</p>
+                    </div>
+                </div>
+    
+                <div class="div-carousel card text-center mt-2">
+                    <div class="div-image-carousel">
+                        <img class="card-img" src="./public/img/div-photo-carousel/product-tshitr-white-700x500.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>T-shirt Blanc</p>
+                        <p class="text-couleur-site-rouge">$60.00</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>    
+        <div class="div-bouton-carousel text-center mt-2">
+            <button class="btn bouton-carousel-un active">1</button>
+            <button class="btn bouton-carousel-deux ">2</button>
+            <button class="btn bouton-carousel-trois ">3</button>
+            <button class="btn bouton-carousel-quatre ">4</button>
+        </div>
     
     </section>
     
@@ -282,8 +566,8 @@
     </section>
     
     <!--src/scss/modules/_footer.scss-->
-    <footer class="container-fluid bg-couleur-footer mt-5">
-        <div class="row container  mx-auto text-white">
+    <footer class="container-fluid text-white bg-couleur-footer mt-5">
+        <div class="row container mx-auto">
             <div class="col-lg-4">
                 <h6>About Us</h6>
                 <p>A wonderfull serenity has Taken ...</p>
@@ -296,17 +580,17 @@
             </div>
             <div class="col-lg-4">
                 <h6>Tag Cloud</h6>
-                <div class="d-flex">
+                <div class="d-flex text-white">
                     <button type="button" class="btn">Business</button>
                     <button type="button" class="btn">Confidence</button>
                     <button type="button" class="btn">Gadgets</button>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex text-white">
                     <button type="button" class="btn">Identity</button>
                     <button type="button" class="btn">Logo</button>
                     <button type="button" class="btn">Photography</button>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex text-white">
                     <button type="button" class="btn">Time</button>
                     <button type="button" class="btn">Trips</button>
                     <button type="button" class="btn">Works</button>
@@ -321,14 +605,15 @@
         <p class="text-center text-white">&copy;COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
     </div>
     
+    
 
 
 
+    <script src="./public/js/main.js"></script>
 
-
-    <script type="module" src="./public/js/main.js"></script>
     <!-- script jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
+
     <!-- script bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>

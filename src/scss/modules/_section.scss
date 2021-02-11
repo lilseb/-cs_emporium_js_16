@@ -1,24 +1,52 @@
-// SECTION POUR ZOOM
-.carte-colonne-image{
-    overflow:hidden;
-    padding: 0;
-    position: relative;
-    .image-colonne{
-        transition: all 2s;
-        width: 100%;
-        display: flex;
+.card{
+    .carte-colonne-image{
+        overflow:hidden;
+        padding: 0;
+        position: relative;
+        .image-colonne{
+            transition: all 2s;
+            width: 100%;
+            display: flex;
+            z-index: 0;
+        }
+        .cache{
+            z-index: -1;
+        }
     }
 }
 
 .carte-colonne-image:hover .image-colonne{
-    
     transform: scale(1.3)
 }
-
+.carte-colonne-image:hover .cache{
+    z-index: 0;
+}
 .sales{
     background-color: red;
     height: 65px;
     width : 65px;
     border-radius: 50%;
     padding-top : 2.5vh;
+}       
+
+.modal-complet{
+    background-color: #ccc;
+    position:fixed;
+    z-index:1051; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    visibility:hidden; 
+    opacity:0;
+    transition: visibility .3s, opacity .3s;  
+}
+.hide{
+    width:100%;
+    height:100%;
+    background-color:  rgba(0,0,0,.5);
+    z-index:1050; 
+    position: fixed;
+}
+.div-carousel{
+    width: 49vh;
 }
