@@ -1,3 +1,4 @@
+// LET : NAVBAR // 
 let maNavbar = document.querySelector(`nav`)
 let header = document.querySelector(`header`)
 
@@ -141,18 +142,24 @@ if (e.target.nodeName === "BUTTON") {
 
     Array.from(boutonCarousel.children).forEach(item => item.classList.remove("active"))
     
-    if (e.target.classList.contains("bouton-carousel-un")) {
-      affichageCarousel.style.transform = "translateX(0)"
-      e.target.classList.add("active")
-    } else if (e.target.classList.contains("bouton-carousel-deux")) {
-      affichageCarousel.style.transform = "translateX(-16.7%)"
-      e.target.classList.add("active")
+if (e.target.classList.contains("bouton-carousel-un")) {
+    affichageCarousel.style.transform = "translateX(0)"
+    e.target.classList.add("active")
+} else if (e.target.classList.contains("bouton-carousel-deux")) {
+    affichageCarousel.style.transform = "translateX(-16.7%)"
+    e.target.classList.add("active")
     } else if (e.target.classList.contains("bouton-carousel-trois")) {
-      affichageCarousel.style.transform = "translateX(-33.4%)"
-      e.target.classList.add("active")
+    affichageCarousel.style.transform = "translateX(-33.4%)"
+    e.target.classList.add("active")
     } else if (e.target.classList.contains("bouton-carousel-quatre")) {
-      affichageCarousel.style.transform = "translateX(-50.1%)"
-      e.target.classList.add("active")
+    affichageCarousel.style.transform = "translateX(-50.1%)"
+    e.target.classList.add("active")
+    } else if (e.target.classList.contains("bouton-carousel-cinq")) {
+        affichageCarousel.style.transform = "translateX(-66.8%)"
+        e.target.classList.add("active")
+    } else if (e.target.classList.contains("bouton-carousel-six")) {
+        affichageCarousel.style.transform = "translateX(-83.5%)"
+        e.target.classList.add("active")
     }
   }
 })

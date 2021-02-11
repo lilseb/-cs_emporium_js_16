@@ -51,10 +51,14 @@
 .div-carousel{
     width: 49vh;
 }
+@include media-breakpoint-up(md) {
+    .div-carousel{
+        width : 34vh ;
+    }
+}
 .bouton-blanc{
     border:1px black solid;
 }
 .bouton-dark{
     border: 1px white solid;
 }
-

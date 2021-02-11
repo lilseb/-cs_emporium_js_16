@@ -16679,6 +16679,12 @@ header {
   width: 49vh;
 }
 
+@media (min-width: 768px) {
+  .div-carousel {
+    width: 34vh;
+  }
+}
+
 .bouton-blanc {
   border: 1px black solid;
 }
